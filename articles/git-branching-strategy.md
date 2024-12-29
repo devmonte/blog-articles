@@ -38,8 +38,8 @@ Below is a table comparing the two.
 To keep it simple stupid! (KISS) As mentioned at the begginning there is no silver bullet so let's start from the simple one and add complexity over time. Simple solution are easier to understand and implement which is especially important when creating some recommendations. So even though first option was more robust it was also more complex which could lead to misunderstaing in teams that would use it and lead issues with merge conflicts and different code versions across branches. 
 
 # If you want to know more
-
-Below are articles I have explored during reaserch around this topic
+For those interested in diving deeper into Git branching strategies, here are some helpful resources I found during my research.
 - [Git branching strategy - MS Learn](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 - [Choosing the Right Git Branching Strategy](https://medium.com/@sreekanth.thummala/choosing-the-right-git-branching-strategy-a-comparative-analysis-f5e635443423)
 - [Stop Using Branches for Deploying to Different GitOps Environments](https://codefresh.io/blog/stop-using-branches-deploying-different-gitops-environments/)
+
