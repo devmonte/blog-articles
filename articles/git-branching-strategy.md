@@ -6,16 +6,17 @@ tags: #git
 cover_image: 
 ---
 
-# How it started
+# Our Branching Strategy Journey
 
-Recently we had a discussion within our platform team about creating documentation for other teams about branching strategy for storing Infrastruture as Code files as well as application code. After some interesting and intensive discussion we agreed on Trunk Based branching strategy following Keep it Simple approach(KISS). I explored this topic wide and deep so decided to create this note for future reference and it might be helpfull for others. In this type of decissions it always depends and I think there is no silver bullet but it is good to make a thoughfull decission based on some disccusions.
+Recently, we had a discussion within our platform team about establishing recommendations and then creating documentation for other teams on branching strategies for storing Infrastructure as Code (IaC) files as well as application code. After some interesting and intensive discussions, we agreed on the Trunk-Based branching strategy, following the "Keep It Simple, Stupid" (KISS) approach. I explored this topic extensively and decided to create this note for future reference, which might also be helpful for others. In such decisions, the answer often lies in the specific context and requirements of the project. It depends on factors like team size, project complexity, and the desired pace of delivery. While there is no silver bullet, making a thoughtful decision based on informed discussions is crucial.
 
-# What we have and what we were considering?
+# Branching Strategies Compared
 
-There is a couple of different branching strategies from quite complex like Git flow to the simplest like Trunk based but there are a few more: Github flow, Gitlab flow, environment branching and so on...
-In our case we were discussing mostly two strategies: environment branching and trunk based. Idea behind the first one was to have a secure approach where each environment has its own branch which allows better control over the source code and releases and reduce the chance of potential bugs. IN other hand we had trunk based which is very simple so easy to use.
+There are several branching strategies, ranging from the quite complex (like Git Flow) to the simplest (like Trunk-Based). Other notable strategies include GitHub Flow, GitLab Flow, Environment Branching, and more.
 
-Below is a table comparing the two. 
+In our case, we focused primarily on storing Infrastructure as Code (IaC) files and, as a result, narrowed our discussion to two strategies: Environment Branching and Trunk-Based. The idea behind Environment Branching was to adopt a secure approach where each environment has its own branch. This allows better control over the source code and releases while reducing the chance of potential bugs. On the other hand, Trunk-Based branching is very simple and, therefore, easy to use. It involves a single main branch where developers integrate their changes continuously, enabling faster delivery and streamlined workflows.
+
+Below is a table comparing the two:
 | Aspect                    | Environment Branching                            | Trunk Based                                     |
 |---------------------------|--------------------------------------------------|-------------------------------------------------|
 | **Complexity**            | High complexity with multiple branches to manage.| Simple, with a single branch as the source of truth. |
@@ -33,11 +34,11 @@ Below is a table comparing the two.
 
 ![Environment branching vs Trunk-based devlopment](../img/branching.png)
 
-# So why Trunk Based?
+# Why We Chose Trunk-Based?
 
-To keep it simple stupid! (KISS) As mentioned at the begginning there is no silver bullet so let's start from the simple one and add complexity over time. Simple solution are easier to understand and implement which is especially important when creating some recommendations. So even though first option was more robust it was also more complex which could lead to misunderstaing in teams that would use it and lead issues with merge conflicts and different code versions across branches. 
+To keep it simple, stupid! (KISS) As mentioned at the beginning, there is no silver bullet. Therefore, starting with a simple strategy and adding complexity over time makes sense. Simple solutions are easier to understand and implement, which is especially important when creating recommendations. Although the first option (Environment Branching) was more robust, it was also more complex. This complexity could lead to misunderstandings among teams using it, causing issues with merge conflicts and different code versions across branches. 
 
-# If you want to know more
+# Want to Learn More
 For those interested in diving deeper into Git branching strategies, here are some helpful resources I found during my research.
 - [Git branching strategy - MS Learn](https://learn.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
 - [Choosing the Right Git Branching Strategy](https://medium.com/@sreekanth.thummala/choosing-the-right-git-branching-strategy-a-comparative-analysis-f5e635443423)
